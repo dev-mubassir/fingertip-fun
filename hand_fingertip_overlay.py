@@ -63,7 +63,8 @@ class HandFingertipOverlay:
             print("Error: Could not open webcam.")
             return
 
-        cv2.namedWindow(self.window_name)
+        cv2.namedWindow(self.window_name, cv2.WINDOW_NORMAL)
+        cv2.setWindowProperty(self.window_name, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
         print("Hand Fingertip Overlay started.")
         print("Show hands - all 5 fingertips tracked per hand")

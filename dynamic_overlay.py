@@ -74,7 +74,8 @@ class DynamicOverlay:
             print("Error: Could not open webcam.")
             return
 
-        cv2.namedWindow(self.window_name)
+        cv2.namedWindow(self.window_name, cv2.WINDOW_NORMAL)
+        cv2.setWindowProperty(self.window_name, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
         cv2.setMouseCallback(self.window_name, self.mouse_callback)
 
         print("Dynamic Coordinate Overlay started.")

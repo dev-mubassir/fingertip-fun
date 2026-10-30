@@ -1,4 +1,4 @@
-# Fingertip Fun 🎯
+# Fingertip Fun 
 
 Interactive hand-tracking overlays using MediaPipe and OpenCV. Control polygons with your fingertips — no clicks, no pins, just hands.
 

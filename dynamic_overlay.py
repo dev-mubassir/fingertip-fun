@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 
-
 class DynamicOverlay:
     def __init__(self):
         self.points = []
